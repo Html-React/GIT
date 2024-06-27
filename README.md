@@ -16,3 +16,11 @@ git config --global user.name "Your Name"
 
 # Настройка email
 git config --global user.email "your.email@example.com"
+
+# Инициализация нового репозитория
+git init
+
+# Клонирование существующего репозитория
+git clone https://github.com/username/repository.git
+
+Инициализация и клонирование
