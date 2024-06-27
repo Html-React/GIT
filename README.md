@@ -10,6 +10,7 @@
 
 ### Настройка
 
+
 ```bash
 # Настройка имени пользователя
 git config --global user.name "Your Name"
@@ -23,4 +24,52 @@ git init
 # Клонирование существующего репозитория
 git clone https://github.com/username/repository.git
 
-Инициализация и клонирование
+# Просмотр состояния файлов в рабочей директории
+git status
+
+# Добавление изменений в индекс для последующего коммита
+git add <file>
+
+# Создание коммита с сообщением
+git commit -m "Commit message"
+
+# Просмотр списка веток и текущей ветки
+git branch
+git branch -a
+
+# Создание новой ветки
+git branch <branch-name>
+
+# Переключение на другую ветку
+git checkout <branch-name>
+
+# Удаление ветки
+git branch -d <branch-name>
+
+# Слияние указанной ветки в текущую
+git merge <branch-name>
+
+# Добавление удаленного репозитория
+git remote add origin https://github.com/username/repository.git
+
+# Просмотр списка удаленных репозиториев
+git remote -v
+
+# Отправка изменений в удаленный репозиторий
+git push -u origin main
+
+# Получение изменений с удаленного репозитория и слияние их с локальными
+git pull origin main
+
+## Дополнительные команды
+
+# Просмотр истории коммитов
+git log
+
+# Отмена изменений и возврат к предыдущему состоянию
+git reset --hard HEAD
+
+# Временное сохранение изменений, которые еще не готовы для коммита
+git stash
+git stash pop
+
